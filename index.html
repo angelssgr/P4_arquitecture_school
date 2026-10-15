@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4 - school architecture</title>
+    <style>
+        :root {
+            --beige-color: #DDC6AC;
+            --brown-color: #3D290F;
+            --white-color: #FFFFFF;
+        }
+        h1 {
+            font-size: 22px;
+            color: var(--brown-color);
+        }
+        body {
+            margin: 0;
+            padding: 40px;
+            display: flex; 
+            background-color: var(--white-color);
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sala {
+            position: relative;
+            width: 402px;
+            height: 586px;
+            background-color: var(--beige-color);
+            border: 4px solid var(--brown-color);
+            clip-path: polygon(0 0, 402px 0, 402px 186px, 286px 186px, 286px 586px, 0 586px);
+        }
+        .element {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: var(--white-color);
+        }
+        .porta {
+            background-color: var(--brown-color);
+            position: absolute;
+            right: 0; 
+            top: 0;
+            width: 172px; 
+            height: 30px;  
+        }
+        .banc1 {
+            background-color: var(--brown-color);
+            position: absolute;
+            left: 20px;  
+            top: 20px;  
+            width: 56px;  
+            height: 144px;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .banc2 {
+            background-color: var(--brown-color);
+            position: absolute;
+            left: 20px;
+            top: 274px;
+            width: 56px;  
+            height: 204px; 
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .parasol1 {
+            background-color: var(--white-color);
+            color: var(--brown-color);
+            position: absolute;
+            left: 185px; 
+            top: 186px;
+            width: 90px;
+            height: 90px;
+            clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+        }
+        .parasol2 {
+            background-color: var(--white-color);
+            color: var(--brown-color);
+            position: absolute;
+            left: 185px; 
+            top: 484px;
+            width: 90px;
+            height: 90px;
+            clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>TERRASSA</h1>
+    </header>
+    <main>
+        <div class="sala">
+            <div class="element porta">PORTA</div>
+            <div class="element banc1">BANC 1</div>
+            <div class="element banc2">BANC 2</div>
+            <div class="element parasol1">PARA-SOL 1</div>
+            <div class="element parasol2">PARA-SOL 2</div>
+        </div>
+    </main>
+</body>
+</html>
